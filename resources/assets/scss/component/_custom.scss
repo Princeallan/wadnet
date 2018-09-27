@@ -32,27 +32,6 @@ body {
       h1 {
         color: #F97300;
       }
-
-      .section-2 {
-        margin: 4em 0;
-        position: relative;
-
-        .item {
-          position: relative;
-
-          .img-fluid {
-            //height: 300px;
-          }
-        }
-
-        .des {
-          background: #F97300;
-          color: #fff;
-          text-align: center;
-          border-bottom-left-radius: 93%;
-          transition: .3s ease-in-out;
-        }
-      }
     }
   }
 

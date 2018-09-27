@@ -10,6 +10,6 @@ class SliderRepository
     public function getSliders()
     {
 
-        return Slider::where('status->en', '1')->get();
+        return Slider::all();
     }
 }

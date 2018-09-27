@@ -55,34 +55,6 @@
             </div>
 
 
-            <h1 class="text-center">Issues</h1>
-            <div class="row section-2">
-                <div class="col-lg-4 col-md-4 col-sm-12 item">
-                    <img src="{{asset('img/Magazine97.jpg')}}" class="img-fluid img-shape" alt="team">
-                    <div class="des">
-                        Magazine Title 1
-                    </div>
-                    <a href="#">Download</a> |
-                    <a href="#">Read</a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 item">
-                    <img src="{{asset('img/Magazine97.jpg')}}" class="img-fluid img-shape" alt="team">
-                    <div class="des">
-                        Magazine Title 2
-                    </div>
-                    <a href="#">Download</a> |
-                    <a href="#">Read</a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 item">
-                    <img src="{{asset('img/Magazine97.jpg')}}" class="img-fluid img-shape" alt="team">
-                    <div class="des">
-                        Magazine Title 3
-                    </div>
-                    <a href="#">Download</a> |
-                    <a href="#">Read</a>
-                </div>
-            </div>
-
         </div>
     </div>
 
