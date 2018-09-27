@@ -4,12 +4,12 @@
 
     <div id="carouselExampleControls" class="carousel slide mb-4" data-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item img-shape active" style="background-image: url({{asset('img/Magazine97.jpg')}});">
-            </div>
-            <div class="carousel-item img-shape" style="background-image: url({{asset('img/abo.jpg')}});">
-            </div>
-            <div class="carousel-item img-shape" style="background-image: url({{asset('img/Magazine97.jpg')}});">
-            </div>
+            @foreach($sliders as $slider)
+                <div class="carousel-item img-shape active"
+                     style="background-image: url('storage/{!! $slider->image->path !!}');">
+                </div>
+            @endforeach
+
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

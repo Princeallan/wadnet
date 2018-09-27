@@ -11,12 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('landing-page');
-});
-Route::get('/contact', function () {
-    return view('frontend.contact');
-});
-Route::get('/about', function () {
-    return view('frontend.about');
-});
+Route::get('/', 'Frontend\HomeController@index' );
+
+Route::get('/about-us', 'Frontend\HomeController@getAbout' );
+
+Route::get('/contact-us', 'Frontend\HomeController@getContact' );

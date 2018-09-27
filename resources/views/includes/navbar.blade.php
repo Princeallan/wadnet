@@ -9,8 +9,8 @@
                 <div class="nav-scroller py-1 mb-2">
                     <nav class="nav d-flex justify-content-end">
                         <a class="p-2 text-muted" href="/">Overview</a>
-                        <a class="p-2 text-muted" href="/about">About</a>
-                        <a class="p-2 text-muted" href="/contact">Contact Us</a>
+                        <a class="p-2 text-muted" href="/about-us">About</a>
+                        <a class="p-2 text-muted" href="/contact-us">Contact Us</a>
 
                     </nav>
                 </div>
