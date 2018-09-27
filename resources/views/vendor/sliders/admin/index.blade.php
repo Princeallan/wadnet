@@ -29,7 +29,7 @@
                     <th st-sort="title_translated" class="title_translated st-sort">{{ __('Summary') }}</th>
                 </tr>
                 <tr>
-                    <td colspan="5">
+                    <td colspan="12">
                         <input st-search="title_translated" class="form-control form-control-sm" placeholder="@lang('Filter')…" type="text">
                     </td>
                 </tr>
@@ -48,7 +48,7 @@
                         <img ng-src="@{{ model.thumb }}" alt="">
                     </td>
                     <td>@{{ model.title_translated }}</td>
-                    <td>@{{ model.summary }}</td>
+                    <td>@{{ model.summary.en }}</td>
                 </tr>
             </tbody>
             <tfoot>
