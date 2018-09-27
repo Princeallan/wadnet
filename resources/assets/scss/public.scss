@@ -1,5 +1,5 @@
 @import 'public/bootstrap';
-@import 'node_modules/font-awesome/scss/font-awesome';
+@import '../../../node_modules/font-awesome/scss/font-awesome';
 @import 'public/errors';
 @import 'public/site-header';
 @import 'public/site-footer';
@@ -13,6 +13,11 @@
 @import 'fancybox';
 @import 'public/navbar-hide-left-button';
 @import 'public/gallery';
+
+
+@import 'component/navbar';
+@import 'component/custom';
+
 
 .has-navbar {
     padding-top: 3rem;

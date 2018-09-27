@@ -1,0 +1,22 @@
+.navbar-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .blog-header {
+    width: 90%;
+
+    .nav-scroller {
+
+      .nav {
+        a {
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+    }
+  }
+}
