@@ -26,10 +26,10 @@
                     <th st-sort="status_translated" class="status st-sort">{{ __('Status') }}</th>
                     <th st-sort="image" class="image st-sort">{{ __('Image') }}</th>
                     <th st-sort="title_translated" class="title_translated st-sort">{{ __('Title') }}</th>
+                    <th st-sort="title_translated" class="title_translated st-sort">{{ __('Summary') }}</th>
                 </tr>
                 <tr>
-                    <td colspan="4"></td>
-                    <td>
+                    <td colspan="5">
                         <input st-search="title_translated" class="form-control form-control-sm" placeholder="@lang('Filter')…" type="text">
                     </td>
                 </tr>
@@ -48,6 +48,7 @@
                         <img ng-src="@{{ model.thumb }}" alt="">
                     </td>
                     <td>@{{ model.title_translated }}</td>
+                    <td>@{{ model.summary }}</td>
                 </tr>
             </tbody>
             <tfoot>

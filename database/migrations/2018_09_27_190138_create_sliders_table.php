@@ -20,7 +20,6 @@ class CreateSlidersTable extends Migration
             $table->json('title');
             $table->json('slug');
             $table->json('summary');
-            $table->json('body');
             $table->timestamps();
         });
     }
