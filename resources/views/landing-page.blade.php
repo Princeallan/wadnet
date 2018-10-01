@@ -2,12 +2,15 @@
 
 @section('content')
 
-    <div id="carouselExampleControls" class="carousel slide mb-4" data-ride="carousel">
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-            @foreach($sliders as $slider)
-                <div class="carousel-item img-shape active"
-                     style="background-image: url('storage/{!! $slider->image->path !!}');">
-                </div>
+          @foreach($sliders as $key => $slider)
+
+            <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
+                <img class="d-block w-100" src="storage/{{$slider->image->path}}" alt="First slide">
+            </div>
+
             @endforeach
 
         </div>

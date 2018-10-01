@@ -29,5 +29,8 @@
         @include('includes.footer')
 
 </div>
+
+<script src="{{ mix('/js/public.js') }}"></script>
+
 </body>
 </html>
