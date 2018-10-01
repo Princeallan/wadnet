@@ -16624,9 +16624,8 @@ a.text-dark:focus {
 }
 
 body .img-shape {
-  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background: no-repeat center;
 }
 
 body .carousel {
@@ -16746,6 +16745,10 @@ body .contact-form .right .form-control::-ms-input-placeholder {
 body .contact-form .right .form-control::placeholder {
   color: #888;
   font-size: 16px;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
 }
 
 .navbar-section {

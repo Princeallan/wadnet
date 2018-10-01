@@ -190,6 +190,7 @@ return [
          */
         // TypiCMS\Modules\News\Providers\ModuleProvider::class,
         TypiCMS\Modules\Sliders\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Magazines\Providers\ModuleProvider::class,
 
         /*
          * TypiCMS Core Service Provider...

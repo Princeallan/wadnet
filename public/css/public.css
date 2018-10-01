@@ -15702,6 +15702,10 @@ button.swiper-pagination-bullet {
   color: #ced4da;
 }
 
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
 .navbar-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15726,9 +15730,8 @@ button.swiper-pagination-bullet {
 }
 
 body .img-shape {
-  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background: no-repeat center;
 }
 
 body .carousel {
