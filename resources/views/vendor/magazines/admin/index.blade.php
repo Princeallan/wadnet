@@ -28,8 +28,7 @@
                     <th st-sort="title_translated" class="title_translated st-sort">{{ __('Title') }}</th>
                 </tr>
                 <tr>
-                    <td colspan="4"></td>
-                    <td>
+                    <td colspan="12">
                         <input st-search="title_translated" class="form-control form-control-sm" placeholder="@lang('Filter')…" type="text">
                     </td>
                 </tr>

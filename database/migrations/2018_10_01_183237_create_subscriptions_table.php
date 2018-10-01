@@ -17,7 +17,7 @@ class CreateSubscriptionsTable extends Migration
             $table->increments('id');
             $table->integer('image_id')->unsigned()->nullable();
             $table->json('status');
-            $table->json('title');
+            $table->string('email');
             $table->json('slug');
             $table->json('summary');
             $table->json('body');

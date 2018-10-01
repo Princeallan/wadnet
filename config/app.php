@@ -193,6 +193,7 @@ return [
         TypiCMS\Modules\Magazines\Providers\ModuleProvider::class,
         TypiCMS\Modules\Contacts\Providers\ModuleProvider::class,
         TypiCMS\Modules\Abouts\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Subscriptions\Providers\ModuleProvider::class,
 
         /*
          * TypiCMS Core Service Provider...

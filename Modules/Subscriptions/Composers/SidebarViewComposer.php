@@ -17,7 +17,7 @@ class SidebarViewComposer
         $view->sidebar->group(__('Content'), function (SidebarGroup $group) {
             $group->id = 'content';
             $group->weight = 30;
-            $group->addItem(__('Subscriptions'), function (SidebarItem $item) {
+            $group->addItem(__('Subscribers'), function (SidebarItem $item) {
                 $item->id = 'subscriptions';
                 $item->icon = config('typicms.subscriptions.sidebar.icon');
                 $item->weight = config('typicms.subscriptions.sidebar.weight');
