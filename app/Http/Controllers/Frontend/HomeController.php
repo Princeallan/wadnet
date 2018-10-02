@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\WadNet\SliderRepository;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use TypiCMS\Modules\Contacts\Models\Contact;
 
 class HomeController extends Controller
 {
@@ -38,5 +39,15 @@ class HomeController extends Controller
     {
 
         return view('frontend.contact');
+    }
+
+    /**
+     * @param Request $request
+     * @return void
+     */
+    public function postContact(Request $request)
+    {
+
+        Contact::create($request->all());
     }
 }

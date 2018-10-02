@@ -11,16 +11,20 @@
                         </div>
                         <div class="col-lg-8 col-md-8 col-sm-12 right">
                             <div class="form-group">
+                                <label> Name: </label>
                                 <input type="text" class="form-control form-control-lg" placeholder="Your Name" v-model="contact.name">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com"
-                                       v-model="contact.email">
+                                <label> Email: </label>
+                                    <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com"
+                                           v-model="contact.email">
                             </div>
                             <div class="form-group">
+                                <label >Message: </label>
                                 <textarea class="form-control form-control-lg" v-model="contact.message"></textarea>
                             </div>
-                            <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+                            <button @click="AddContact" class="btn btn-secondary btn-block">Send</button>
+                            {{--<input type="button"  class="btn btn-secondary btn-block" value="Send">--}}
                         </div>
                     </div>
             </div>
