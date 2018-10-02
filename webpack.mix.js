@@ -10,7 +10,11 @@ mix.sass('resources/assets/scss/public.scss', 'public/css');
  * Compile JS
  */
 mix.js('resources/assets/js/admin.js', 'public/js');
-mix.js('resources/assets/js/public.js', 'public/js');
+mix.js([
+        'resources/assets/js/public.js',
+        'resources/assets/js/app.js',
+    ],
+    'public/js');
 
 /**
  * Copy font-awesome files
@@ -52,7 +56,7 @@ var plugins = [
     'widget',
     'wsc',
 ];
-plugins.forEach(function(plugin) {
+plugins.forEach(function (plugin) {
     mix.copy('node_modules/ckeditor/plugins/' + plugin, 'public/components/ckeditor/plugins/' + plugin);
 });
 

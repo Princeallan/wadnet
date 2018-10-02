@@ -2262,11 +2262,6 @@ pre code {
   opacity: 1;
 }
 
-.form-control:-ms-input-placeholder {
-  color: #6c757d;
-  opacity: 1;
-}
-
 .form-control::-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
@@ -16728,11 +16723,6 @@ body .contact-form .right .btn-secondary {
 }
 
 body .contact-form .right .form-control::-webkit-input-placeholder {
-  color: #888;
-  font-size: 16px;
-}
-
-body .contact-form .right .form-control:-ms-input-placeholder {
   color: #888;
   font-size: 16px;
 }
