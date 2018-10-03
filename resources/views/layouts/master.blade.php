@@ -21,7 +21,6 @@
 </head>
 <body>
 <div class="container" id="app"  style="width: 80%;">
-
         @include('includes.navbar')
 
         @yield('content')

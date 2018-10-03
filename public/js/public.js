@@ -8786,29 +8786,64 @@ function mergeFn (a, b) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-
-    name: 'contact',
-
     data: function data() {
         return {
-            contact: {}
+            contact: {
+                name: '',
+                email: '',
+                message: ''
+            }
         };
     },
-
     methods: {
-        AddContact: function AddContact() {
-            var _this = this;
-
+        addContact: function addContact() {
+            console.log("tcrc");
+            return;
             var vm = this;
             var data = vm.contact;
 
             axios.post('/api/contact-us', data).then(function (response) {
 
                 window.location.href = '/contact-us';
-                _this.data = [];
+                vm.data = [];
 
                 vm.$notify({
                     title: 'Success',
@@ -95357,6 +95392,145 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-712dc7b7\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/ContactUs.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c(
+      "a",
+      {
+        staticClass: "btn btn-secondary btn-block",
+        on: {
+          click: function($event) {
+            _vm.$emit("ontesr")
+          }
+        }
+      },
+      [_vm._v("Send2")]
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "contact-form" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row contact" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-8 col-md-8 col-sm-12 right" }, [
+            _c("div", { staticClass: "form-group" }, [
+              _c("label", [_vm._v(" Name: ")]),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.contact.name,
+                    expression: "contact.name"
+                  }
+                ],
+                staticClass: "form-control form-control-lg",
+                attrs: { type: "text", placeholder: "Your Name" },
+                domProps: { value: _vm.contact.name },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.contact, "name", $event.target.value)
+                  }
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-group" }, [
+              _c("label", [_vm._v(" Email: ")]),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.contact.email,
+                    expression: "contact.email"
+                  }
+                ],
+                staticClass: "form-control form-control-lg",
+                attrs: { type: "email", placeholder: "YourEmail@email.com" },
+                domProps: { value: _vm.contact.email },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.contact, "email", $event.target.value)
+                  }
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-group" }, [
+              _c("label", [_vm._v("Message: ")]),
+              _vm._v(" "),
+              _c("textarea", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.contact.message,
+                    expression: "contact.message"
+                  }
+                ],
+                staticClass: "form-control form-control-lg",
+                domProps: { value: _vm.contact.message },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.contact, "message", $event.target.value)
+                  }
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-secondary btn-block",
+                on: { click: _vm.addContact }
+              },
+              [_vm._v("Sends")]
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-4 col-md-4 col-sm-12" }, [
+      _c("h1", [_vm._v("Get in Touch")])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-712dc7b7", module.exports)
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/vue/dist/vue.common.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -106424,7 +106598,7 @@ var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/comp
 /* script */
 var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/ContactUs.vue")
 /* template */
-var __vue_template__ = null
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-712dc7b7\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/ContactUs.vue")
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
