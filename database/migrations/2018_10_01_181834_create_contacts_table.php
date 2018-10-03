@@ -16,9 +16,7 @@ class CreateContactsTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->integer('image_id')->unsigned()->nullable();
-            $table->json('status');
             $table->string('name');
-            $table->json('slug');
             $table->string('email');
             $table->string('message');
             $table->timestamps();

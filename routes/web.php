@@ -16,3 +16,5 @@ Route::get('/', 'Frontend\HomeController@index' );
 Route::get('/about-us', 'Frontend\HomeController@getAbout' );
 
 Route::get('/contact-us', 'Frontend\HomeController@getContact' );
+
+Route::post('contact/save', 'Frontend\HomeController@postContact' );

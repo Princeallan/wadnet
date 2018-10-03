@@ -20,7 +20,7 @@
     <link href="{{ asset('css/public.css') }}" rel="stylesheet">
 </head>
 <body>
-<div class="container" id="app"  style="width: 80%;">
+<div class="container" style="width: 80%;">
         @include('includes.navbar')
 
         @yield('content')
