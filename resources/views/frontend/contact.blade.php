@@ -9,7 +9,7 @@
                     <h1>Get in Touch</h1>
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-12 right">
-                    <form action="{{ url('contact/save') }}" method="post">
+                    <form action="{{ url('contact-us') }}" method="post">
                         {{ csrf_field() }}
                         <div class="form-group">
                             <label> Name: </label>

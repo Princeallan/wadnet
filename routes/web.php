@@ -17,4 +17,4 @@ Route::get('/about-us', 'Frontend\HomeController@getAbout' );
 
 Route::get('/contact-us', 'Frontend\HomeController@getContact' );
 
-Route::post('contact/save', 'Frontend\HomeController@postContact' );
+Route::post('/contact-us', 'Frontend\HomeController@postContact' );
