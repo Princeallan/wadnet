@@ -16718,6 +16718,7 @@ body .about {
   margin: 4em 0;
   padding: 1em;
   position: relative;
+  width: 90%;
 }
 
 body .about h1 {
@@ -16785,6 +16786,10 @@ body .contact-form .right .form-control::-ms-input-placeholder {
 body .contact-form .right .form-control::placeholder {
   color: #888;
   font-size: 16px;
+}
+
+body footer p {
+  display: inline;
 }
 
 .blog-header-logo:hover {

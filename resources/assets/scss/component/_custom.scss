@@ -77,26 +77,36 @@ body {
   .contact-form {
     margin: 6em 0;
     position: relative;
+
+    h1 {
+      padding: 2em 1px;
+      color: #F97300;
+    }
+
+    .right {
+      max-width: 600px;
+
+      .btn-secondary {
+        background: #F97300;
+        color: #fff;
+        border: 0;
+      }
+
+      .form-control::placeholder {
+        color: #888;
+        font-size: 16px;
+      }
+    }
   }
 
-  .contact-form h1 {
-    padding: 2em 1px;
-    color: #F97300;
-  }
-
-  .contact-form .right {
-    max-width: 600px;
-  }
-
-  .contact-form .right .btn-secondary {
-    background: #F97300;
-    color: #fff;
-    border: 0;
-  }
-
-  .contact-form .right .form-control::placeholder {
-    color: #888;
-    font-size: 16px;
+  footer {
+    p {
+      display: inline;
+    }
   }
 }
+
+//footer
+
+
 
