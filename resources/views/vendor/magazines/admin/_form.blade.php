@@ -15,7 +15,7 @@
     {!! TranslatableBootForm::checkbox(__('Published'), 'status') !!}
 </div>
 <div class="form-group">
-    {!! BootForm::text(__('Read link'), 'url') !!}
-    {!! BootForm::text(__('Download link'), 'url') !!}
+    {!! BootForm::text(__('Read link'), 'read_link') !!}
+    {!! BootForm::text(__('Download link'), 'down_link') !!}
 </div>
 {!! TranslatableBootForm::textarea(__('Summary'), 'summary')->rows(4) !!}
