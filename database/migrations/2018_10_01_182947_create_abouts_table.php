@@ -18,9 +18,12 @@ class CreateAboutsTable extends Migration
             $table->integer('image_id')->unsigned()->nullable();
             $table->json('status');
             $table->json('title');
-            $table->string('quote');
-            $table->string('about_magazine');
-            $table->string('about_body');
+            $table->json('slug');
+            $table->text('quote');
+            $table->string('author_title');
+            $table->text('author_content');
+            $table->string('magazine_title');
+            $table->text('magazine_content');
             $table->timestamps();
         });
     }

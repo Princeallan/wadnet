@@ -5,7 +5,9 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Requests\ContactRequest;
 use App\WadNet\SliderRepository;
 use App\Http\Controllers\Controller;
+use TypiCMS\Modules\Abouts\Models\About;
 use TypiCMS\Modules\Contacts\Models\Contact;
+use TypiCMS\Modules\Magazines\Models\Magazine;
 
 class HomeController extends Controller
 {
@@ -25,14 +27,16 @@ class HomeController extends Controller
     {
 
         $sliders = $this->sliderrepository->getSliders();
+        $magazines = Magazine::where('status->en', '1')->latest()->get();
 
-        return view('landing-page', compact('sliders'));
+        return view('landing-page', compact('sliders', 'magazines'));
     }
 
     public function getAbout()
     {
+        $about = About::first();
 
-        return view('frontend.about');
+        return view('frontend.about', compact('about'));
     }
 
     public function getContact()

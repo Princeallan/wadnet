@@ -28,33 +28,20 @@
         <div class="row-width">
             <h1 class="text-center">Issues</h1>
             <div class="row">
+
+                @foreach($magazines as $magazine)
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card">
-                        <img class="card-img-top img-shape" src="{{asset('img/Magazine97.jpg')}}" alt="Card image cap">
+                        <img class="card-img-top img-shape" src="storage/{{ $magazine->image->path }}" alt="Card image cap">
                         <div class="card-body">
-                            <a href="#" class="card-link">Download</a>
-                            <a href="#" class="card-link">Read</a>
+                            <h6 class="{!! $magazine->title !!}"></h6>
+                            <a href="{!! $magazine->down_link !!}" class="card-link" target="_blank" >Download</a>
+                            <a href="{!! $magazine->read_link !!}" class="card-link" target="_blank" >Read</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="card">
-                        <img class="card-img-top img-shape" src="{{asset('img/Magazine97.jpg')}}" alt="Card image cap">
-                        <div class="card-body">
-                            <a href="#" class="card-link">Download</a>
-                            <a href="#" class="card-link">Read</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="card">
-                        <img class="card-img-top img-shape" src="{{asset('img/Magazine97.jpg')}}" alt="Card image cap">
-                        <div class="card-body">
-                            <a href="#" class="card-link">Download</a>
-                            <a href="#" class="card-link">Read</a>
-                        </div>
-                    </div>
-                </div>
+                    @endforeach
+
             </div>
 
 

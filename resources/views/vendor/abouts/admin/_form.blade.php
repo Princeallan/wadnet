@@ -15,5 +15,7 @@
     {!! TranslatableBootForm::checkbox(__('Published'), 'status') !!}
 </div>
 {!! BootForm::textarea(__('Quote'), 'quote')->rows(4) !!}
-{!! BootForm::textarea(__('About Author'), 'about_author')->addClass('ckeditor') !!}
-{!! BootForm::textarea(__('About Magazine'), 'about_magazine')->addClass('ckeditor') !!}
+{!! BootForm::text(__('Author Title'), 'author_title') !!}
+{!! BootForm::textarea(__('Author Story'), 'author_content')->addClass('ckeditor') !!}
+{!! BootForm::text(__('Magazine Title'), 'magazine_title')!!}
+{!! BootForm::textarea(__('Magazine Story'), 'magazine_content')->addClass('ckeditor') !!}
