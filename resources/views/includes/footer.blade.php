@@ -1,40 +1,47 @@
 <!-- Footer -->
-<footer class="page-footer font-small cyan darken-3">
+<footer class="page-footer font-small special-color-dark pt-4">
 
+    <!-- Footer Elements -->
     <div class="container">
 
-        <div class="row">
-
-            <div class="col-md-12 py-5">
-                <div class="mb-5 flex-center">
-
-                    <a class="fb-ic">
-                        <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <a class="tw-ic">
-                        <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <a class="gplus-ic">
-                        <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <a class="li-ic">
-                        <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <a class="ins-ic">
-                        <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <a class="pin-ic">
-                        <i class="fa fa-pinterest fa-lg white-text fa-2x"> </i>
-                    </a>
-                </div>
-            </div>
-
-        </div>
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a class="btn-floating btn-fb mx-1" href="http://wadnetwork.com">
+                    <i class="fa fa-facebook"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1" href="http://wadnetwork.com">
+                    <i class="fa fa-twitter"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1" href="http://wadnetwork.com">
+                    <i class="fa fa-google-plus"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1" href="http://wadnetwork.com">
+                    <i class="fa fa-linkedin"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-dribbble mx-1" href="http://wadnetwork.com">
+                    <i class="fa fa-dribbble"> </i>
+                </a>
+            </li>
+        </ul>
+        <!-- Social buttons -->
 
     </div>
+    <!-- Footer Elements -->
 
+    <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2018 Copyright:
-        <a href="http://wadnetwork.com"> MDBootstrap.com</a>
+        <a href="http://wadnetwork.com"> WadNetwork.com</a>
     </div>
+    <!-- Copyright -->
 
 </footer>
+<!-- Footer -->
