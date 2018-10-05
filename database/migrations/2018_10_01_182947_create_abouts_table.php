@@ -18,9 +18,9 @@ class CreateAboutsTable extends Migration
             $table->integer('image_id')->unsigned()->nullable();
             $table->json('status');
             $table->json('title');
-            $table->json('slug');
-            $table->json('summary');
-            $table->json('body');
+            $table->string('quote');
+            $table->string('about_magazine');
+            $table->string('about_body');
             $table->timestamps();
         });
     }
